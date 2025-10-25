@@ -656,7 +656,7 @@ features: ['Manchester Based Service', 'Flexible Scheduling', 'Local Assessors']
               </div>
               <div>
                 <h4 className="font-semibold text-yellow-200 text-lg mb-1">Service Areas</h4>
-                <p className="text-green-100 font-semibold text-lg">Nationwide UK Coverage</p>
+                <p className="text-green-100 font-semibold text-lg">Manchester Coverage</p>
               </div>
             </div>
           </div>
