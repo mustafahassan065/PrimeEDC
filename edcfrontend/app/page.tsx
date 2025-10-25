@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Home() {
-  const [openFaq, setOpenFaq] = useState(null)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  const toggleFaq = (index) => {
-    setOpenFaq(openFaq === index ? null : index)
-  }
+
+  const toggleFaq = (index: number) => {
+  setOpenFaq(openFaq === index ? null : index)
+}
 
   const faqs = [
     {
@@ -783,7 +784,7 @@ features: ['Manchester Based Service', 'Flexible Scheduling', 'Local Assessors']
               <textarea
                 id="message"
                 required
-                rows="4"
+                rows={4}
                 className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white placeholder-green-200"
                 placeholder="Tell us about your requirements..."
               ></textarea>
