@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+<<<<<<< HEAD
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,6 +19,13 @@ export default function Home() {
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
   }
+=======
+
+
+  const toggleFaq = (index: number) => {
+  setOpenFaq(openFaq === index ? null : index)
+}
+>>>>>>> 36bc3a20734610d790042be0e6232b4c009878d0
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -756,6 +764,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
 
               {/* Contact Form */}
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
@@ -878,11 +887,109 @@ export default function Home() {
                     )}
                   </button>
                 </form>
+=======
+              <div>
+                <h4 className="font-semibold text-yellow-200 text-lg mb-1">Service Areas</h4>
+                <p className="text-green-100 font-semibold text-lg">Manchester Coverage</p>
+>>>>>>> 36bc3a20734610d790042be0e6232b4c009878d0
               </div>
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </section>
+=======
+
+        {/* Contact Form */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+          <h3 className="text-3xl font-bold mb-8 text-white">Send Us a Message</h3>
+          
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-semibold text-yellow-200 mb-3">
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white placeholder-green-200"
+                  placeholder="Your full name"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-semibold text-yellow-200 mb-3">
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white placeholder-green-200"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="phone" className="block text-sm font-semibold text-yellow-200 mb-3">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white placeholder-green-200"
+                placeholder="+44 XXX XXX XXXX"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="service" className="block text-sm font-semibold text-yellow-200 mb-3">
+                Service Required
+              </label>
+              <select
+                id="service"
+                className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white"
+              >
+                <option value="" className="text-gray-800">Select a service</option>
+                <option value="domestic-epc" className="text-gray-800">Domestic EPC</option>
+                <option value="commercial-epc" className="text-gray-800">Commercial EPC</option>
+                <option value="design-consultancy" className="text-gray-800">Design Consultancy</option>
+                <option value="other" className="text-gray-800">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold text-yellow-200 mb-3">
+                Message *
+              </label>
+              <textarea
+                id="message"
+                required
+                rows={4}
+                className="w-full px-4 py-4 bg-white/10 border border-white/30 rounded-2xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 text-white placeholder-green-200"
+                placeholder="Tell us about your requirements..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-green-500 to-yellow-500 text-white text-lg font-bold py-4 rounded-2xl hover:from-green-600 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 group"
+            >
+              <span>Send Message</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+>>>>>>> 36bc3a20734610d790042be0e6232b4c009878d0
     </div>
   )
 }
