@@ -74,7 +74,7 @@ export default function WhyUs() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("https://buildsoft.com.au/wp-content/uploads/2016/07/The-Modern-Methods-of-Building-and-Construction-.jpg")'
+            backgroundImage: 'url("/images/whyusbg.jpg")'
           }}
         />
         {/* Green & Gold Overlay */}

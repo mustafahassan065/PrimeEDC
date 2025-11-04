@@ -12,11 +12,9 @@ export default function Header() {
         <div className="container mx-auto px-12 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <span>📞 +44 7469 340373</span>
-           
           </div>
           <div className="flex items-center space-x-4">
-            <span>Serve customers across the Manchester</span>
-           
+            <span>We serve areas within a 50-mile radius of Manchester.</span>
           </div>
           <div className="hidden md:block">
             📧 primeepc.design@gmail.com
@@ -38,8 +36,9 @@ export default function Header() {
             <Link href="/about" className="text-gray-700 hover:text-green-700 font-medium">About</Link>
             <Link href="/why-us" className="text-gray-700 hover:text-green-700 font-medium">Why Us</Link>
             <Link href="/blog" className="text-gray-700 hover:text-green-700 font-medium">Blog</Link>
-            <Link href="/faqs" className="text-gray-700 hover:text-green-700 font-medium">FAQs</Link>
-            <Link href="/contact" className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+            <Link href="/#faqs" className="text-gray-700 hover:text-green-700 font-medium">FAQs</Link>
+            <Link href="/#contact" className="text-gray-700 hover:text-green-700 font-medium">Contact</Link>
+            <Link href="/booking" className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
               Book Your EPC
             </Link>
           </div>
@@ -63,8 +62,9 @@ export default function Header() {
               <Link href="/about" className="text-gray-700 hover:text-green-700 font-medium">About</Link>
               <Link href="/why-us" className="text-gray-700 hover:text-green-700 font-medium">Why Us</Link>
               <Link href="/blog" className="text-gray-700 hover:text-green-700 font-medium">Blog</Link>
-              <Link href="/faqs" className="text-gray-700 hover:text-green-700 font-medium">FAQs</Link>
-              <Link href="/contact" className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium text-center">
+              <Link href="/#faqs" className="text-gray-700 hover:text-green-700 font-medium">FAQs</Link>
+              <Link href="/#contact" className="text-gray-700 hover:text-green-700 font-medium">Contact</Link>
+              <Link href="/booking" className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium text-center">
                 Book Your EPC
               </Link>
             </div>
